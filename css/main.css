@@ -1,85 +1,233 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-html, body, h1, h2,
-h3, p, ol, a {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  font-size: 100%;
-  font: inherit;
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ol, ul, li,{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-}
+	body {
+		line-height: 1;
+	}
 
-h3 {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Open Sans";
-  padding: 4px 0 4px 0;
-  margin: 3px 0 3px 0;
-}
+	ol, ul {
+		list-style: none;
+	}
 
-p {
-  font-size: 18px;
-}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 160px;
-  overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s;
-  text-align: center;
-  line-height: 160px;
-}
+	body {
+		-webkit-text-size-adjust: none;
+	}
 
-.header.shrink {
-  height: 80px;
-  line-height: 80px;
-}
+	@-ms-viewport {
+		width: device-width;
+	}
 
-.header .header_content {
-  font-family: "Open Sans";
-  font-size:35px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  background: #ccc;
-  color: #fff;
-  margin: 0 auto 0 auto;
-  width: 570px;
-  border-radius: 20px;
-}
+	body {
+		-ms-overflow-style: scrollbar;
+	}
 
-.header.shrink .header_content {
-  font-family: "Open Sans";
-  font-size:24px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
+	@media screen and (max-width: 480px) {
 
-.content {
-  width: 570px;
-  padding: 20px;
-  margin: 160px auto 0 auto;
-  height: 2000px;
-}
+		html, body {
+			min-width: 320px;
+		}
 
-.content .tagline, .skills, .contact {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
+	}
 
-.content .job_title {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-}
+	body {
+		background: #fff;
+	}
+
+	body {
+		color: #9a9a9a;
+		font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+		font-size: 14pt;
+		font-weight: 400;
+		line-height: 1.65;
+		margin: 2em 0 0 0;
+	}
+
+	a {
+		color: #6d6cc0;
+		text-decoration: underline;
+	}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+	strong, b {
+		color: #555;
+		font-weight: 600;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 1em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #555;
+		font-weight: 400;
+		line-height: 1.5;
+		margin: 0 0 0.2em 0;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.85em;
+		font-weight: 300;
+	}
+
+	h3 {
+		font-size: 1.75em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.9em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+
+	dl {
+		margin: 0 0 2em 0;
+	}
+
+		dl dt {
+			display: block;
+			font-weight: 600;
+			margin: 0 0 1em 0.5em;
+		}
+
+		dl dd {
+			margin-left: 1em;
+		}
+
+	.inner {
+		max-width: 30em;
+		margin: 0 auto;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: solid 1px #dbdbdb;
+		margin: 2em 0;
+	}
+
+		hr.major {
+			margin: 1em 0;
+		}
+
+	.image {
+		border-radius: 0;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image.round img {
+			border-radius: 100%;
+			box-shadow: 0px 0px 0px 7px #fff, 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.image.profileImageDim {
+			width: 150px;
+			height: 150px;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			body {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body {
+				font-size: 12pt;
+			}
+
+			.inner {
+				max-width: 90%;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+
+			body {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			body {
+				font-size: 12pt;
+			}
+
+			h3 {
+				font-size: 1.25em;
+			}
+
+			.inner {
+				max-width: 90%;
+			}
+		}

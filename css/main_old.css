@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body, h1, h2,
+h3, p, ol, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  padding: 4px 0 4px 0;
+  margin: 3px 0 3px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 160px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align: center;
+  line-height: 160px;
+}
+
+.header.shrink {
+  height: 80px;
+  line-height: 80px;
+}
+
+.header .header_content {
+  font-family: "Open Sans";
+  font-size:35px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #ccc;
+  color: #fff;
+  margin: 0 auto 0 auto;
+  width: 570px;
+  border-radius: 20px;
+}
+
+.header.shrink .header_content {
+  font-family: "Open Sans";
+  font-size:24px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.content {
+  width: 570px;
+  padding: 20px;
+  margin: 160px auto 0 auto;
+  height: 2000px;
+}
+
+.content .tagline, .skills, .contact {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content .job_title {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
